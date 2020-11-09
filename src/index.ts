@@ -20,8 +20,8 @@ class Block {
 }
 
 const genesisBlock: Block = new Block(0, "2020202020202", "", "Hello", 123456);
-//array of blaock [Block]
-let blockchain: [Block] = [genesisBlock];
+//array of blaock Block[]
+let blockchain: Block[] = [genesisBlock];
 
 console.log(blockchain);
 
