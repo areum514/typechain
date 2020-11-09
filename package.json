@@ -1,0 +1,9 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "creadting blockchain using typescripte",
+  "main": "index.js",
+  "repository": "https://github.com/areum514/typechain.git",
+  "author": "areum514 <21500514@handong.edu>",
+  "license": "MIT"
+}
