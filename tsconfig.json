@@ -1,0 +1,10 @@
+//typescripte에게 어떻게 js로 변환하는지 알려주면서 몇몇 옵션을 주는 파일 ~
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES2015",
+        "sourceMap": true
+    },
+    "include": ["index.ts"],
+    "exclude": ["node_modules"]
+}
