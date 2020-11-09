@@ -1,20 +1,28 @@
-//class로 작성하면 index.js에 class를 볼 수 있음 interface로 작성하면 아무것도 안나오지
-class Human{
-    public name:string;
-    public age:number;
-    public gender:string;
-    constructor(name:string,age:number,gender?:string){
-        this.name=name;
-        this.age=age;
-        this.gender=gender;
-    }
+class Block {
+  public index: number;
+  public hash: string;
+  public previousHash: string;
+  public data: string;
+  public timestamp: number;
+  constructor(
+    index: number,
+    hash: string,
+    previousHash: string,
+    data: string,
+    timestamp: number
+  ) {
+    this.index = index;
+    this.hash = hash;
+    this.previousHash = previousHash;
+    this.data = data;
+    this.timestamp = timestamp;
+  }
 }
-const areum=new Human("areum",25,"f")
 
-const sayHi=(person:Human):void=>{
-    console.log(`Hello ${person.name}, you are ${person.age}, you are ${person.gender}`);
-}
+const genesisBlock: Block = new Block(0, "2020202020202", "", "Hello", 123456);
+//array of blaock [Block]
+let blockchain: [Block] = [genesisBlock];
 
-sayHi(areum)
+console.log(blockchain);
 
-export{}
+export {};
