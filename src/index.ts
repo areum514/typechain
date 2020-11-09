@@ -1,11 +1,19 @@
-const name="areum",
-    age=25,
-    gender="f";
-
-const sayHi=(name:string,age:number,gender:string):void=>{
-    console.log(`Hello ${name}, you are ${age}, you are ${gender}`);
+interface Human{
+    name:string;
+    age:number;
+    gender:string;
 }
 
-sayHi(name,age,gender)
+const person={
+    name="areum",
+    age=25,
+    gender="f"
+}
+
+const sayHi=(person:Human):void=>{
+    console.log(`Hello ${person.name}, you are ${person.age}, you are ${person.gender}`);
+}
+
+sayHi(person)
 
 export{}
